@@ -1,0 +1,8 @@
+defaults:
+  - commons
+  - _self_
+
+_target_: "src.nn.models.tts_transformer.TTSTransformerModel"
+time_layers: 1
+spatial_layers: 2
+num_heads: 4

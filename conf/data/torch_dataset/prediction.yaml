@@ -1,0 +1,7 @@
+_target_: "src.data.spatiotemporal_dataset.SpatioTemporalDataset"
+window: 12
+horizon: 1
+delay: 0
+stride: 1
+window_lag: 1
+horizon_lag: 1

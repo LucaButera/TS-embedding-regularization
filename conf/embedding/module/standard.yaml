@@ -1,0 +1,4 @@
+_target_: "src.nn.layers.embedding.IFNodeEmbedding"
+emb_size: 32
+initializer: "normal"
+forgetting_strategy: null

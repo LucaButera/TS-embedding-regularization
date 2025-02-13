@@ -1,0 +1,10 @@
+defaults:
+  - commons
+  - metrics: prediction_univariate
+  - _self_
+
+_target_: "src.engines.predictor.Predictor"
+optim_kwargs:
+  lr: 0.00075
+loss_fn:
+  _target_: "tsl.metrics.torch.MaskedMAE"

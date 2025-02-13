@@ -1,0 +1,13 @@
+defaults:
+  - torch_dataset: prediction
+  - datamodule: prediction
+  - _self_
+
+add_exogenous: false
+mask_as_exog: false
+scale_target: false
+connectivity:
+  method: "distance"
+  threshold: 0.1
+  include_self: false
+  layout: "edge_index"

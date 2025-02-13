@@ -1,0 +1,31 @@
+defaults:
+  - trainer: pl_trainer
+  - engine: predictor
+  - model: rnn
+  - embedding: none
+  - regularization: none
+  - data: metrla
+  - _self_
+
+hydra:
+  job:
+    chdir: true
+  run:
+    dir: "outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}"
+  sweep:
+    dir: "outputs/multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}"
+    subdir: "${hydra.job.num}"
+
+trainer:
+  limit_train_batches: 300
+  max_epochs: 200
+early_stopping:
+  patience: "${trainer.max_epochs}"
+  grace_epochs: 0
+seed: 42
+mode: "fit"
+checkpoint: null
+monitor: "val/loss"
+num_threads: 1
+regularize_whole_model: false
+notes: null

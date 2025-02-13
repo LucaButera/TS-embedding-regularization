@@ -1,0 +1,3 @@
+method: "l2"
+factor: 1e-4
+stop_after: null

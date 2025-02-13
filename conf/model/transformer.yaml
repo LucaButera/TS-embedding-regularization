@@ -1,0 +1,5 @@
+defaults:
+  - tts_transformer
+  - _self_
+
+time_model: "rnn"

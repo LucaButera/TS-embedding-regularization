@@ -1,0 +1,11 @@
+defaults:
+  - commons
+  - dataset: airquality
+  - _self_
+    
+add_exogenous: true
+mask_as_exog: true
+scale_target: true
+torch_dataset:
+  window: 24
+  horizon: 3

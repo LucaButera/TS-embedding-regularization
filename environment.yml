@@ -1,0 +1,24 @@
+name: embreg
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11.*
+  - pytorch=2.1.*
+  - lightning=2.1.*
+  - hydra-core=1.3.*
+  - numpy=1.26.*
+  - pandas
+  - pytables
+  - bokeh
+  - matplotlib
+  - tqdm
+  - openpyxl
+  - wandb
+  - pip
+  - pip:
+    - torch-scatter
+    - torch-sparse
+    - torch-geometric
+    - torch-spatiotemporal

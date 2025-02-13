@@ -1,0 +1,10 @@
+defaults:
+  - commons
+  - dataset: pemsbay
+  - _self_
+    
+add_exogenous: true
+mask_as_exog: true
+torch_dataset:
+  window: 12
+  horizon: 12

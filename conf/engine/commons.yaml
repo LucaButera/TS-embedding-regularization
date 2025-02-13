@@ -1,0 +1,6 @@
+forgetting_scheduler: "${embedding.forgetting_scheduler}"
+log_embeddings_every: 25
+model: "${model}"
+optim_class:
+  _target_: "hydra.utils.get_class"
+  path: "torch.optim.Adam"

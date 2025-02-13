@@ -1,0 +1,3 @@
+_target_: "tsl.datasets.AirQuality"
+root: "${cache: AirQuality}"
+impute_nans: true

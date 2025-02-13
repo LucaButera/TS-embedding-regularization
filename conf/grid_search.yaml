@@ -1,0 +1,20 @@
+defaults:
+  - experiment
+  - override trainer/logger: wandb
+  - override engine: predictor
+  - override embedding: standard
+  - override data: metrla
+  - override regularization: none
+  - _self_
+
+hydra:
+  mode: MULTIRUN
+  sweeper:
+    params:
+      seed: 1,2,3,4,5
+      regularization: none,l2,dropout
+      data: metrla,pemsbay,airquality
+      model: time_only,message_passing,transformer
+      embedding: none,standard,periodic,variational,clusterized
+      model.hidden_size: 32,64,128,256
+      engine.optim_kwargs.lr: 0.00025,0.00075,0.0015,0.003

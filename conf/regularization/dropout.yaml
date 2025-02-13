@@ -1,0 +1,3 @@
+method: "dropout"
+factor: 0.5
+stop_after: null

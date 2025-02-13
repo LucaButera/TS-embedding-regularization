@@ -1,0 +1,3 @@
+embedding: "${embedding.module}"
+add_embedding_before: ["encoding", "decoding"]
+hidden_size: 64

@@ -1,0 +1,3 @@
+_target_: "tsl.datasets.PemsBay"
+root: "${cache: PemsBay}"
+mask_zeros: true

@@ -1,0 +1,6 @@
+defaults:
+  - commons
+  - _self_
+
+_target_: "src.nn.models.mlp.MLPModel"
+window: "${data.torch_dataset.window}"

@@ -1,0 +1,12 @@
+defaults:
+  - splitter: temporal
+  - _self_
+
+_target_: "src.data.spatiotemporal_datamodule.SpatioTemporalDataModule"
+batch_size: 64
+workers: 0
+pin_memory: false
+scalers:
+  target:
+    _target_: "tsl.data.preprocessing.StandardScaler"
+    axis: "${as_tuple:0,1}"

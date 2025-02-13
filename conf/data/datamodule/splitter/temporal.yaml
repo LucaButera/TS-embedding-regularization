@@ -1,0 +1,3 @@
+_target_: "tsl.data.datamodule.splitters.TemporalSplitter"
+val_len: 0.1
+test_len: 0.2

@@ -1,0 +1,5 @@
+defaults:
+  - tts_amp
+  - _self_
+
+time_model: "rnn"

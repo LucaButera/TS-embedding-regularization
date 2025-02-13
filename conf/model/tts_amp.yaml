@@ -1,0 +1,6 @@
+defaults:
+  - commons
+  - _self_
+
+_target_: "src.nn.models.tts_amp.TTSAMPModel"
+graph_layers: 2

@@ -1,0 +1,7 @@
+_target_: "pytorch_lightning.loggers.WandbLogger"
+project: "embreg"
+log_model: true
+id: null  # runtime populated
+group: null  # runtime populated
+name: null  # runtime populated
+save_dir: null  # runtime populated

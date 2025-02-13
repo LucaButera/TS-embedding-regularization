@@ -1,0 +1,4 @@
+defaults:
+  - module: periodic
+  - forgetting_scheduler: periodic
+  - _self_

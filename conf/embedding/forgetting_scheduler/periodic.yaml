@@ -1,0 +1,6 @@
+scheduler_class: periodic
+reset_embedding_related_params: true
+stop_after: "${math: ${trainer.max_epochs} // 2 + 1}"
+max_forget: 1.0
+warmup_for: 30
+period: "${math: ${trainer.max_epochs} // 10}"

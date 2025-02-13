@@ -1,0 +1,6 @@
+defaults:
+  - standard
+  - _self_
+
+forgetting_strategy:
+  _target_: "src.nn.layers.embedding.ForgettingStrategy"

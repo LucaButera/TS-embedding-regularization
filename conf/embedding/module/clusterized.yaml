@@ -1,0 +1,13 @@
+_target_: "src.nn.layers.embedding.ClusterizedNodeEmbedding"
+emb_size: 32
+n_clusters: 5
+requires_grad: true
+estimator: 'gt'
+learned_assignments: true
+separation_loss: false
+sep_eps: 1.
+tau: 1.
+temp_annealing: true
+temp_decay_coeff: 0.97
+warmup: 5
+beta: 0.0005
